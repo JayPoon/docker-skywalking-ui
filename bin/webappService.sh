@@ -21,6 +21,6 @@ _RUNJAVA=${JAVA_HOME}/bin/java
 
 
 $_RUNJAVA ${JAVA_OPTS} -jar ${JAR_PATH}/skywalking-webapp.jar \
-         --server.port=8080 --collector.ribbon.listOfServers=127.0.0.1:10800 \
+         --server.port=8080 --collector.ribbon.listOfServers=${COLLECTOR_ADDRESS} \
 
 
